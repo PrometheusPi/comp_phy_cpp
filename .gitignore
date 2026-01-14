@@ -39,3 +39,7 @@
 
 # debug information files
 *.dwo
+
+# Sphinx
+docs/make.bat
+docs/build/
