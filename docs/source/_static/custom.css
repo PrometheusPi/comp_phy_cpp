@@ -1,0 +1,17 @@
+.section {
+     text-align:justify;
+}
+
+/* normal browser */
+.wy-nav-content {
+    max-width: 80%;
+    width: auto;
+}
+
+/* on phones (use the whole width) */
+@media (max-width: 1600px) {
+    .wy-nav-content {
+        max-width: none;
+        width: auto;
+    }
+}
