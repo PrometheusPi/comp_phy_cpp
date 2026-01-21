@@ -11,6 +11,7 @@ Welcome to computational physics in c++'s documentation!
    :caption: Lessons:
 
    lessons/01_hello-world
+   lessons/02_variables   
 
 Indices and tables
 ==================
