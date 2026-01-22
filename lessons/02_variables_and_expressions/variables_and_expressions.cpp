@@ -16,7 +16,9 @@ int main(){
 
   std::cout << std::endl;
 
-  // datatype: float / double
+  /* datatype:
+     float / double
+  */     
   float x = 3.1415;
   double y;
   y = 1.23e4;
