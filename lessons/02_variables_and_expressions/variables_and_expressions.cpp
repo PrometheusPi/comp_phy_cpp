@@ -28,13 +28,6 @@ int main(){
 
   std::cout << std::endl;
 
-  // datatype: char / string
-  char letter = 'q';
-  std::string text = "uestion";
-  std::cout << letter << text << std::endl;
-
-  std::cout << std::endl;
-
   // datatype: vector / array
   std::vector<double> list1 = {1.2, 3.4, 5.6};
   std::array<double, 3> list2 = {1.2, 3.4, 5.6};
@@ -42,6 +35,14 @@ int main(){
   std::cout << list1[0] << "\t" << list2[2] << "\t" << list3 << std::endl;
   list1[1] = 4.2;
   std::cout << list1[0] << "\t" << list1[1] << "\t" << list1[2] << std::endl;
+
+  std::cout << std::endl;
+
+  // datatype: char / string
+  char letter = 'q';
+  char char_array[5] = "abcd";
+  std::string text = "uestion";
+  std::cout << letter << text << std::endl;
   
   return 0;
 };
