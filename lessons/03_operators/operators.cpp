@@ -23,7 +23,7 @@ int main(){
   c = a / b;
   std::cout << a << " / " << b << " = " << c << std::endl;
 
-  std::cout << "integer operations:" << std::endl;
+  std::cout << std::endl << "integer operations:" << std::endl;
   int x, y, z;
   x = 12;
   y = -5;
@@ -36,7 +36,7 @@ int main(){
   z = x % y;
   std::cout << x << " % " << y << " = " << z << std::endl;
 
-  std::cout << "boolan operations:" << std::endl;
+  std::cout << std::endl << "boolan operations:" << std::endl;
   bool h, i, j;
 
   h = true;
@@ -48,7 +48,7 @@ int main(){
   j = h || i;
   std::cout << h << " or " << i << " = " << j << std::endl;
 
-  std::cout << "further operations" << std::endl;
+  std::cout << std::endl << "further operations" << std::endl;
 
   std::cout << "a = " << a << std::endl;
   a++;
@@ -71,6 +71,14 @@ int main(){
 
   a /= 2;
   std::cout << "after a /= 2: a = " << a << std::endl;
-  
+
+  std::cout << std::endl << "conditional operator:" << std::endl;
+
+  c = (a >= 30) ? -2 : +4;
+  std::cout << "c = (a >= b) ? -2 : +4" << std::endl;
+  std::cout << "a = " << a << " b = " << b << std::endl;
+  std::cout << "(a >= b) = " << (a >= b) << std::endl;
+  std::cout << "c = " << c << std::endl;
+
   return 0;
 };
