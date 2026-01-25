@@ -48,6 +48,29 @@ int main(){
   j = h || i;
   std::cout << h << " or " << i << " = " << j << std::endl;
 
+  std::cout << "further operations" << std::endl;
 
+  std::cout << "a = " << a << std::endl;
+  a++;
+  std::cout << "after a++: a = " << a << std::endl;
+
+  std::cout << "b = "<< b << std::endl;
+  b = ++a;
+  std::cout << "after ++a: a = " << a << " b = " << b << std::endl;
+  b = a++;
+  std::cout << "after a++: a = " << a << " b = " << b << std::endl;
+
+  a += 10;
+  std::cout << "after a += 10: a = " << a << std::endl;
+
+  a -= 10;
+  std::cout << "after a -= 5: a = " << a << std::endl;
+
+  a *= 4;
+  std::cout << "after a *= 4: a = " << a << std::endl;
+
+  a /= 2;
+  std::cout << "after a /= 2: a = " << a << std::endl;
+  
   return 0;
 };
