@@ -43,6 +43,17 @@ int main(){
   char char_array[5] = "abcd";
   std::string text = "uestion";
   std::cout << letter << text << std::endl;
+
+  std::cout << std::endl;
+  
+  // datatype: bool
+  bool right = true;
+  bool wrong = false;
+  std::cout << "right = " << right << " and wrong = " << wrong << std::endl;
+  std::cout << std::boolalpha;
+  std::cout << "right = " << right << " and wrong = " << wrong << std::endl;
+  std::cout << std::noboolalpha;
+  std::cout << "right = " << right << " and wrong = " << wrong << std::endl;
   
   return 0;
 };
