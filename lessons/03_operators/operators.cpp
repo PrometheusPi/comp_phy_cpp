@@ -37,6 +37,7 @@ int main(){
   std::cout << x << " % " << y << " = " << z << std::endl;
 
   std::cout << std::endl << "boolan operations:" << std::endl;
+  std::cout << std::boolalpha;
   bool h, i, j;
 
   h = true;
