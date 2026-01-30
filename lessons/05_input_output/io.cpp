@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <filesystem>
+#include <fstream>
 
 int main(){
   // get numbers from user input
@@ -35,6 +36,17 @@ int main(){
     std::cerr << "File: " << filename << " does not exist!" << std::endl;
     return 1;
   }
+
+  std::ifstream file(filename);
+  while (file >> num){ // this assumes the file has one number per line/row
+    numbers.push_back(num);
+  }
+
+  int i = 1;
+  for(double num: numbers){
+    std::cout << i++ << ". number in file " << filename << " is: " << num << std::endl;
+  }
+  
   
   return 0;
 };
