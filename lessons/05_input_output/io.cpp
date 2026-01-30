@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <filesystem>
 
 int main(){
   // get numbers from user input
@@ -23,5 +24,17 @@ int main(){
   }
 
   std::cout << num << std::endl;
+
+
+  // empty numbers
+  numbers.clear();
+
+  // load file
+  std::string filename = "numbers.dat";
+  if (!std::filesystem::exists(filename)) {
+    std::cerr << "File: " << filename << " does not exist!" << std::endl;
+    return 1;
+  }
+  
   return 0;
 };
