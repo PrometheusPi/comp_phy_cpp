@@ -46,7 +46,21 @@ int main(){
   for(double num: numbers){
     std::cout << i++ << ". number in file " << filename << " is: " << num << std::endl;
   }
-  
-  
+
+
+  // write text to file
+  std::ofstream outFile("results.dat");
+  if (!outFile) {
+    // handle errors
+    std::cerr << "could not write to file" << std::endl;
+    return 2;
+  }
+
+  for(double num : numbers){
+    outFile << num << "\t" << std::sin(num) << std::endl;
+  }
+
+  outFile.close();
+
   return 0;
 };
