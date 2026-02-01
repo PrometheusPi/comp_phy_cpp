@@ -2,6 +2,8 @@
 #include <cmath>
 #include <filesystem>
 #include <fstream>
+#include <format> // requires c++20
+#include <iomanip>
 
 int main(){
   // get numbers from user input
@@ -61,6 +63,18 @@ int main(){
   }
 
   outFile.close();
+
+
+  // string formating
+  num = 1234.56789;
+  /* Does not work on my machine (yet) TODO
+  // {...} replace with argument
+  // :.2f = (:)input (f)loat with any leading values before the coma and 2 after
+  std::string s = std::format("{:.2f}", num); // "1234.57"
+  */
+  std::cout << num << " --> ";
+  std::cout << std::fixed << std::setprecision(2) << num << " --> ";
+  std::cout << std::scientific << std::setprecision(2) << num << std::endl;
 
   return 0;
 };
