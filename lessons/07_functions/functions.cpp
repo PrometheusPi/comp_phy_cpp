@@ -30,9 +30,11 @@ int fibanocci(int x){
 
 
 int main(){
+  // simple function
   myFunction("abc", 5);
 
 
+  // function overloading
   double a_d = 2.0;
   float a_f = 2.0;
 
@@ -43,9 +45,29 @@ int main(){
   std::cout << "sum of " << a_f << " and " << b_f << " = " << sum(a_f, b_f) << std::endl;
 
 
+  // recursive function calls
   std::cout << "Fibanocci sequence:" << std::endl;
   for (int i = 1; i <= 10; i++)
     std::cout << i << " \t " << fibanocci(i) << std::endl;
+
+
+  // lambda function
+  auto print_lambda = [](){
+    std::cout << "print from lambda function" << std::endl;
+  };
+  print_lambda();
+
+  auto sum_lambda = [](double a, double b){
+    return a + b;
+  };
+  std::cout << sum_lambda(12, 8) << std::endl;
+
+  int global_counter = 12;
+  auto capture_lambda = [global_counter](int x){
+    return global_counter + x;
+  };
+  int res = capture_lambda(8);
+  std::cout << global_counter << " -- " << res << std::endl;
 
   return 0;
 };
