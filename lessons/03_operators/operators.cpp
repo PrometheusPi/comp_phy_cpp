@@ -28,7 +28,7 @@ int main(){
   x = 12;
   y = -5;
 
-  // devision
+  // division
   z = x / y;
   std::cout << x << " / " << y << " = " << z << std::endl;
 
