@@ -30,3 +30,20 @@ The remainder of this divison, also called the modulo in math, can be computed w
    :linenos:
    :emphasize-lines: 2
    :lines: 26-37
+
+
+Boolean binary operations
+-------------------------
+There is a datatype in C and C++ that represent ``true`` and ``false``.
+It is called ``bool``.
+There a binary operations to numbers that will create a bool, like ``12 > 5`` (twelve is greater than five) will be ``true``, while ``10 <= 2`` (ten smaller or equal to two) will be ``false``.
+But there are also binary operations on ``bool`` values, like and ``&&`` or or ``||``.
+And is only true of both values are true.
+Or is true if one or both values are true.
+
+.. literalinclude:: ../../../lessons/03_operators/operators.cpp
+   :linenos:
+   :emphasize-lines: 3
+   :lines: 39-50
+
+The output option ``std::cout << std::boolalpha;`` sets ``true`` and ``false`` in string output not to ``1`` and ``0`` but to readable strings.
