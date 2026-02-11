@@ -47,3 +47,20 @@ Or is true if one or both values are true.
    :lines: 39-50
 
 The output option ``std::cout << std::boolalpha;`` sets ``true`` and ``false`` in string output not to ``1`` and ``0`` but to readable strings.
+
+
+Number unary operations
+-----------------------
+There are also operators acting just on a single variable.
+These are called unary operators.
+They perform operations ìn place.
+The most common are the increment ``++`` and decrement ``--`` operators that increase or decrease the variable by one.
+If they are in front of the variable, they are executed before the return value, thus the return value is already incremented/decremented.
+If they follow after the variable, the return value is the original content of the variable.
+Furthermore there are addition ``+=```, subtraction ``-=``, multiplication ``*=`` and division ``/=`` unary operators.
+They act like ``a = a + x`` and reprsent a shorthand notation via ``a += x`` (and similar).
+
+.. literalinclude:: ../../../lessons/03_operators/operators.cpp
+   :linenos:
+   :emphasize-lines: 4,8,10,13,16,19,22
+   :lines: 52-74
