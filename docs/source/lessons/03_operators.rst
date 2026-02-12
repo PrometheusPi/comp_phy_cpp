@@ -64,3 +64,33 @@ They act like ``a = a + x`` and reprsent a shorthand notation via ``a += x`` (an
    :linenos:
    :emphasize-lines: 4,8,10,13,16,19,22
    :lines: 52-74
+
+
+Conditional operators
+---------------------
+Because ``if`` / ``else`` clauses with only setting a value depending on the boolean outcome of the logic question, there exist a short-hand form in C++: the conditional operator.
+
+.. code-block:: cpp
+
+   int my_variable;
+   if (a > 2){
+     my_variable = 7;
+   }
+   else{
+     my_variable = 3;
+   }
+
+
+This can be written much short as:
+
+.. code-block:: cpp
+
+   int my_variable = (a > 2) ? 7 : 3;
+
+
+An example is:
+
+.. literalinclude:: ../../../lessons/03_operators/operators.cpp
+   :linenos:
+   :emphasize-lines: 3
+   :lines: 76-82
