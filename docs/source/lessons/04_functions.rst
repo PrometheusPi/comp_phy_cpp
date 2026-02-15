@@ -33,4 +33,4 @@ An example of a self-defined function is:
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
    :emphasize-lines: 1
-   :lines: 7-9
+   :lines: 7-9,11-13,28-32
