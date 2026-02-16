@@ -34,3 +34,20 @@ An example of a self-defined function is:
    :linenos:
    :emphasize-lines: 1
    :lines: 7-9,11-13,28-32
+
+
+Use existing functions from libraries
+-------------------------------------
+It is not neccesairy, that you define all functions yourself.
+Many functions can be added by including libraries.
+E.g. many math functions come by including the standard math library ``cmath``.
+These functions are then found in the ``std`` namespace.
+To e.g. use the sinus function, you can use ``std::sin``.
+
+.. literalinclude:: ../../../lessons/04_functions/functions.cpp
+   :linenos:
+   :emphasize-lines: 2,10
+   :lines: 1-4,11-18,30-32
+
+
+Here, the value for pi is used by including the library ``numbers`` and using ``std::numbers::pi``.
