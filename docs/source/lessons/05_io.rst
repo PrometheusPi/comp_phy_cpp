@@ -1,0 +1,8 @@
+Input/Output (I/O)
+==================
+
+
+Introduction
+------------
+To develop interactive programs loading input from file or from user input and returning result to screen or to file is essential.
+Here, we discuss common methods in C++ to accomplish this.
