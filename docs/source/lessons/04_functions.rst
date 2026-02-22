@@ -33,7 +33,7 @@ An example of a self-defined function is:
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
    :emphasize-lines: 1
-   :lines: 7-9,11-13,28-32
+   :lines: 7-9,39-41,56-58,98-100
 
 
 Use existing functions from libraries
@@ -47,7 +47,7 @@ To e.g. use the sinus function, you can use ``std::sin``.
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
    :emphasize-lines: 2,10
-   :lines: 1-4,11-18,30-32
+   :lines: 1-4,39-46,98-100
 
 
 Here, the value for pi is used by including the library ``numbers`` and using ``std::numbers::pi``.
