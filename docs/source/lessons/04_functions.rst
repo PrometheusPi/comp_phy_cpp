@@ -51,3 +51,16 @@ To e.g. use the sinus function, you can use ``std::sin``.
 
 
 Here, the value for pi is used by including the library ``numbers`` and using ``std::numbers::pi``.
+
+
+Void functions
+--------------
+A function does not necessarily need to return something in C++.
+For example function that just print to screen, do file IO, connect to a sever, etc. do not need to return something.
+For that, the return type ``void`` has been added to C++.
+An example of a self-written ``void``-function, that prints out a string a specific amount of times is:
+
+.. literalinclude:: ../../../lessons/04_functions/functions.cpp
+   :linenos:
+   :emphasize-lines: 3-8
+   :lines: 1,11-18,40,60-61,98-100
