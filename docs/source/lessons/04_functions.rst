@@ -64,3 +64,27 @@ An example of a self-written ``void``-function, that prints out a string a speci
    :linenos:
    :emphasize-lines: 3-8
    :lines: 1,11-18,40,60-61,98-100
+
+
+Function overloading
+--------------------
+In C++, a function is defined by a unique name and its unique input argument types.
+Thus two functions can have the same name if they have different number of inputs and/or input types.
+As an example, we can define two sum functions ``sum`` with two input values but of different type.
+
+.. literalinclude:: ../../../lessons/04_functions/functions.cpp
+   :linenos:
+   :emphasize-lines: 1,5
+   :lines: 20-26
+
+
+The first is a correct sum
+The second actually computes a difference to demonstrate this function overloading.
+
+When calling ``sum()`` with ``double`` input, we access the first function and get a correct sum.
+If we call it with ``float`` input, we get the wrong value.
+
+.. literalinclude:: ../../../lessons/04_functions/functions.cpp
+   :linenos:
+   :emphasize-lines: 11-12
+   :lines: 1,39-40,64-72,98-100
