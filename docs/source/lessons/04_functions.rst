@@ -88,3 +88,23 @@ If we call it with ``float`` input, we get the wrong value.
    :linenos:
    :emphasize-lines: 11-12
    :lines: 1,39-40,64-72,98-100
+
+
+Recursive functions
+-------------------
+Sometimes it is easier to describe a solution of a problem not by an explicit function but by a function that references itself.
+This is called a recursive function.
+The most famous example is the Fibonacci sequence.
+It states that the function at integer ``n`` is the sum of the function at ``n-1`` and ``n-2`` for any :math:`n>1`.
+This is called the recursive case.
+However, also a so-called base case is needed that stops the reference to further self-references.
+In the case of the Fibonacci sequence this is ``n=0`` is defined as ``0`` and ``n=1`` is defined as 1. 
+
+.. literalinclude:: ../../../lessons/04_functions/functions.cpp
+   :linenos:
+   :emphasize-lines: 3-10
+   :lines: 1,28-37,40,75-78,98-100
+
+
+Lambda functions
+----------------
