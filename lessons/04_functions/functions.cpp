@@ -29,10 +29,10 @@ float sum(float x, float y){
 int fibanocci(int x){
   if (x <= 0)
     return 0;
-  else if (x <= 2)
+  else if (x < 2)
     return 1;
 
-  return fibanocci(x - 2) + fibanocci(x -1);
+  return fibanocci(x - 2) + fibanocci(x - 1);
 };
 
 
