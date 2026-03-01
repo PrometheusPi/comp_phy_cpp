@@ -98,7 +98,7 @@ The most famous example is the Fibonacci sequence.
 It states that the function at integer ``n`` is the sum of the function at ``n-1`` and ``n-2`` for any :math:`n>1`.
 This is called the recursive case.
 However, also a so-called base case is needed that stops the reference to further self-references.
-In the case of the Fibonacci sequence this is ``n=0`` is defined as ``0`` and ``n=1`` is defined as 1. 
+In the case of the Fibonacci sequence this is ``n=0`` is defined as ``0`` and ``n=1`` is defined as 1.
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
@@ -108,3 +108,24 @@ In the case of the Fibonacci sequence this is ``n=0`` is defined as ``0`` and ``
 
 Lambda functions
 ----------------
+Sometimes, you will need a function in C++ that you do not want to write a full function definition outside your ``main`` function for.
+This might be needed e.g. in sorting, where you can define a function that describes how to order elements, like whether small and capital letters are equal or have a preference which should go first.
+For such an occasion, where one wants to be lazy, there is the option to define a function in-place.
+Such functions are called lambda functions.
+
+.. literalinclude:: ../../../lessons/04_functions/functions.cpp
+   :linenos:
+   :emphasize-lines: 4,9,15
+   :lines: 1,39-40,82-100
+
+The lambda function syntax is as follows:
+
+.. code-block:: cpp
+
+    auto lambda_function_name = [global_variable](int var1, double var2){
+        ...
+        return some_value
+    };
+
+where ``auto`` is a unspecified type of the function, ``lambda_function_name`` is the name of your lambda function, in brackets ``[...]`` are a list of variables you include from ouside the function scope (but can not change) and in parenthesis ``(...)`` is a list of arguments.
+In curly brackets ``{...}`` follows the function body as in any function, including a ``return`` statement.
