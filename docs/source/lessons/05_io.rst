@@ -6,3 +6,14 @@ Introduction
 ------------
 To develop interactive programs loading input from file or from user input and returning result to screen or to file is essential.
 Here, we discuss common methods in C++ to accomplish this.
+
+
+Writing output to the screen
+----------------------------
+As already used a couple times before, we can write to the terminal using ``std::cout``.
+
+.. code-block:: cpp
+
+    std::cout << "text that you want to have on the terminal" << std::endl;
+
+    
