@@ -16,4 +16,16 @@ As already used a couple times before, we can write to the terminal using ``std:
 
     std::cout << "text that you want to have on the terminal" << std::endl;
 
-    
+
+Reading input from the sterminal
+--------------------------------
+With the input stream ``std::cin``, you can read in user input from the terminal.
+In the example, we read from terminal and fill a vector ``numbers`` until input is not a number anymore.
+
+
+.. literalinclude:: ../../../lessons/05_input_output/io.cpp
+   :linenos:
+   :emphasize-lines: 10
+   :lines: 1,7-21,79-80
+
+The last lines show how the clean up the input stream after a failed input of no-number in our case.	   
