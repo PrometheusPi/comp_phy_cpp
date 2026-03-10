@@ -26,7 +26,7 @@ In the example, we read from terminal and fill a vector ``numbers`` until input 
 .. literalinclude:: ../../../lessons/05_input_output/io.cpp
    :linenos:
    :emphasize-lines: 10
-   :lines: 1,7-21,79-80
+   :lines: 1,6-20,78-79
 
 The last lines show how the clean up the input stream after a failed input of no-number in our case.
 
@@ -39,7 +39,7 @@ In the following example, we read numbers from a text file.
 .. literalinclude:: ../../../lessons/05_input_output/io.cpp
    :linenos:
    :emphasize-lines: 16-17
-   :lines: 1-3,7-8,10,13,34-51,79-80
+   :lines: 1-3,6-7,9,12,33-50,78-79
 
 Before attempting to open a file, we check whether it exists with ``std::filesystem::exists(filename)``.
 A file handler is created with ``std::ifstream file(filename)``.
@@ -57,5 +57,25 @@ In the end, we have to close the file with ``outFile.close()``.
 
 .. literalinclude:: ../../../lessons/05_input_output/io.cpp
    :linenos:
-   :emphasize-lines: 10,18,21
-   :lines: 1-3,7-8,10,13,52-66,79-80
+   :emphasize-lines: 12-13,20
+   :lines: 1-3,6-9,9,12,51-65,78-79
+
+
+Controlling the formatting of the output
+----------------------------------------
+Sometimes, you want yourtext output to follow specific format rules, like how many didgets after the comma should be given, or whether to use standard comma numbers or scientific notation.
+C++ overs a variety of method to do that.
+One introduced recebtly with C++20 is format strings.
+Sadly, this does not work on my system.
+Thus, I will also show how foramtting can be achieved in prior C++ versions.
+
+.. literalinclude:: ../../../lessons/05_input_output/io.cpp
+   :linenos:
+   :emphasize-lines: 2,12,15-16
+   :lines: 1,5-7,12,66-79
+
+The new format method needs including ``#include <format>``.
+Its usage is shown in line 13.
+You give string with information on formating in curly brackets as e.g. ``"{:.1f}"`` for floating pount number with one significant didget after the comma.
+With ``std::fixed`` you can set fixed floating point output, while with ``std::scientific`` you set it to scientific notation.
+With ``std::setprecision(3)`` to 3 didgits after the comma.
