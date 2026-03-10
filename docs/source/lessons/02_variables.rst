@@ -24,6 +24,7 @@ They can either be defined and initialized directly, or only declared and assign
 
 .. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 2-3
    :lines: 9-15
 
@@ -43,6 +44,7 @@ They can be defined in low 32-bit precision as ``float`` or higher precision 64-
 
 .. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
    :linenos:
+   :language: cpp
    :lines: 19-27
 
 
@@ -66,6 +68,7 @@ Sets are not demonstrated below.
 
 .. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
    :linenos:
+   :language: cpp
    :lines: 31-37
 
 
@@ -85,6 +88,7 @@ In C++, the string data type replaces that role and comes with extra features th
 
 .. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
    :linenos:
+   :language: cpp
    :lines: 41-45
 
 

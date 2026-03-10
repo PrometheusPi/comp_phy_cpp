@@ -25,6 +25,7 @@ In the example, we read from terminal and fill a vector ``numbers`` until input 
 
 .. literalinclude:: ../../../lessons/05_input_output/io.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 10
    :lines: 1,6-20,78-79
 
@@ -38,6 +39,7 @@ In the following example, we read numbers from a text file.
 
 .. literalinclude:: ../../../lessons/05_input_output/io.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 16-17
    :lines: 1-3,6-7,9,12,33-50,78-79
 
@@ -57,6 +59,7 @@ In the end, we have to close the file with ``outFile.close()``.
 
 .. literalinclude:: ../../../lessons/05_input_output/io.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 12-13,20
    :lines: 1-3,6-9,9,12,51-65,78-79
 
@@ -71,6 +74,7 @@ Thus, I will also show how foramtting can be achieved in prior C++ versions.
 
 .. literalinclude:: ../../../lessons/05_input_output/io.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 2,12,15-16
    :lines: 1,5-7,12,66-79
 

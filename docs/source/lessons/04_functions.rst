@@ -32,6 +32,7 @@ An example of a self-defined function is:
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 1
    :lines: 7-9,39-41,56-58,98-100
 
@@ -46,6 +47,7 @@ To e.g. use the sinus function, you can use ``std::sin``.
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 2,10
    :lines: 1-4,39-46,98-100
 
@@ -62,6 +64,7 @@ An example of a self-written ``void``-function, that prints out a string a speci
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 3-8
    :lines: 1,11-18,40,60-61,98-100
 
@@ -74,6 +77,7 @@ As an example, we can define two sum functions ``sum`` with two input values but
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 1,5
    :lines: 20-26
 
@@ -86,6 +90,7 @@ If we call it with ``float`` input, we get the wrong value.
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 11-12
    :lines: 1,39-40,64-72,98-100
 
@@ -102,6 +107,7 @@ In the case of the Fibonacci sequence this is ``n=0`` is defined as ``0`` and ``
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 3-10
    :lines: 1,28-37,40,75-78,98-100
 
@@ -115,6 +121,7 @@ Such functions are called lambda functions.
 
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
+   :language: cpp
    :emphasize-lines: 4,9,15
    :lines: 1,39-40,82-100
 
