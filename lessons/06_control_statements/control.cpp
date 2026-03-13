@@ -14,24 +14,24 @@ int main(){
     }
   }
 
-
-
+  // ternary conditional operator
+  
   double input = 10.;
   std::cout << input << " --> ";
   double result = input > 5 ? 2.0 : 3.0;
   std::cout << result << std::endl;
-
-
   std::cout << std::endl;
+
+
   // while loops
 
   int i = 10;
   while( i > 0){
     std::cout << "while: "<< i-- << std::endl;
   }
-
-
   std::cout << std::endl;
+
+
   // do while loops
 
   i = 10;
@@ -46,9 +46,9 @@ int main(){
     std::cout << "do while 2: " << i-- << std::endl;
   }
   while (i > 0);
-
-
   std::cout << std::endl;
+
+
   // break and continue
 
   for(int i = 0; i < 10; i++){
@@ -64,7 +64,6 @@ int main(){
     }
     std::cout << "continue if odd: " << i << std::endl;
   }
-
 
   return 0;
 }
