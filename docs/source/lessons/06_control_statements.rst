@@ -28,3 +28,16 @@ An example is:
    :language: cpp
    :emphasize-lines: 9
    :lines: 1-4,17-24,68-69
+
+
+The ``while`` loop
+-------------------
+The while loop has a condition in ``(...)``.
+If that conditions is true, the code in ``{...}`` is executed.
+This is repeated until the condition becomes false.
+
+.. literalinclude:: ../../../lessons/06_control_statements/control.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 8
+   :lines: 1-4,26-33,68-69
