@@ -41,3 +41,18 @@ This is repeated until the condition becomes false.
    :language: cpp
    :emphasize-lines: 8
    :lines: 1-4,26-33,68-69
+
+
+The ``do``-``while`` loop
+-------------------------
+While the ``while`` look checks the condition before executing its code for the first time, thus not executing it, if the ondition is not initally fulfilled,
+the ``do``-``while`` loop executes the code block fisrt and then checks the condition wheter it should be repeated.
+In the ``do { ... }`` clause, the code to execute is located.
+In the ``while { ... }`` part, the condition for reapeating the ``do`` clause is given.
+Two examples are:
+
+.. literalinclude:: ../../../lessons/06_control_statements/control.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 8-11,15-18
+   :lines: 1-4,35-50,68-69
