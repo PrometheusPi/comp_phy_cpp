@@ -56,3 +56,18 @@ Two examples are:
    :language: cpp
    :emphasize-lines: 8-11,15-18
    :lines: 1-4,35-50,68-69
+
+
+``break`` and ``continue``
+--------------------------
+Sometimes, stopping ierating through a loop is earer determined within the execution block than in the condition.
+For example, looping through all numbers until you find a match, e.g. a number larger than ``5``, you can exit the loop via the ``break statement``.
+Alternatively, sometimes part of the execution should be skiped but the loop should continue.
+This can be realized with the ``continue`` statement.
+In the example below, odd numbers are skiped.
+
+.. literalinclude:: ../../../lessons/06_control_statements/control.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 9,16
+   :lines: 1-4,52-69
