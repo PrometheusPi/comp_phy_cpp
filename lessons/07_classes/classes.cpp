@@ -1,21 +1,32 @@
 #include <iostream>
 
 class BaseParticle{
+
 public:
-  std::string name;
   double x;
   double y;
+
+  BaseParticle(std::string priv_name)
+  {
+    this->name = priv_name;
+  }
+
+  std::string getName()
+  {
+    return this->name;
+  }
+
+private:
+    std::string name;
 };
 
 int main(){
-  BaseParticle simpleParticle;
-  simpleParticle.name = "test particle";
+  BaseParticle simpleParticle("Peter");
   simpleParticle.x = 12.0;
   simpleParticle.y = -7.0;
 
-  std::cout << simpleParticle.name << "'s x: " << simpleParticle.x << std::endl
-	    << simpleParticle.name << "'s y: " << simpleParticle.y << std::endl;
-
+  std::cout << simpleParticle.getName() << "'s x: " << simpleParticle.x << std::endl
+	    << simpleParticle.getName() << "'s y: " << simpleParticle.y << std::endl;
 
   return 0;
 };
