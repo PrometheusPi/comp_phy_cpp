@@ -22,10 +22,26 @@ public:
     this->radius = r;
   }
 
-  
+protected:
+    std::string name;
+};
+
+class ChargedParticle : public BaseParticle{
+public:
+
+  ChargedParticle(std::string name, double charge)
+    : BaseParticle(name), charge(charge)
+  {
+    std::cout << "created a particle " << this->name
+	      << " with charge: " << this->charge << std::endl;
+  }
+
+  double getCharge(){
+    return this->charge;
+  }
 
 private:
-    std::string name;
+  double charge;
 };
 
 int main(){
@@ -38,6 +54,9 @@ int main(){
 
   simpleParticle.set_radius(12.5);
   std::cout << "radius = " << simpleParticle.radius << std::endl;
-  
+
+  ChargedParticle electron("e", -1.0);
+  std::cout << electron.getCharge() << std::endl;
+
   return 0;
 };
