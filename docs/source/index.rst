@@ -16,6 +16,7 @@ Welcome to computational physics in c++'s documentation!
    lessons/04_functions
    lessons/05_io
    lessons/06_control_statements
+   lessons/07_classes
 
 Indices and tables
 ==================
