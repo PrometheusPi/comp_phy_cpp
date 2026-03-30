@@ -29,3 +29,17 @@ Both attributes and methods can be defines as
 +--------------+---------------------------------------------------------------------------------------------------------------------------+
 | ``protected``| being similar to ``private`` but classes that inheritat (see later) can also use these attributes and methods.            |
 +--------------+---------------------------------------------------------------------------------------------------------------------------+
+
+
+Simple class
+------------
+As a simple example, let us define a class for particles.
+This class will provide a 2-dimensional position of our particle, stored as ``double`` value ``x`` and ``y``, and a ``radius``.
+These are ``public`` values.
+Additionally, the class allows for a ``name`` of each particle, that is ``protected``.
+
+.. literalinclude:: ../../../lessons/07_classes/classes.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 5-8,25-26
+   :lines: 1-27
