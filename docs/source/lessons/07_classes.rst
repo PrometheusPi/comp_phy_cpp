@@ -4,7 +4,7 @@ Classes
 
 Introduction
 ------------
-Classes are complex data types, that can contain user-defined data/attributes and methods.
+Classes are complex data types, that can contain user-defined data, called attributes, and functions, called methods.
 
 
 Structure of classes
@@ -43,3 +43,25 @@ Additionally, the class allows for a ``name`` of each particle, that is ``protec
    :language: cpp
    :emphasize-lines: 5-8,25-26
    :lines: 1-27
+
+Constructor
+-----------
+A special method of a class is a constructor.
+It defines how an instance of a class is setup.
+
+.. literalinclude:: ../../../lessons/07_classes/classes.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 1
+   :lines: 10-13
+
+The name of the constructor class is the same as the class name and has no return type.
+There can be multiple constructors with different input.
+It is called when creating an instance of a class
+
+
+.. literalinclude:: ../../../lessons/07_classes/classes.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 2
+   :lines: 47-48,60-62
