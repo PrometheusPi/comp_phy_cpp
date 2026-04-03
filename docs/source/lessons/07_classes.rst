@@ -45,7 +45,7 @@ Additionally, the class allows for a ``name`` of each particle, that is ``protec
    :lines: 1-27
 
 Constructor
------------
+^^^^^^^^^^^
 A special method of a class is a constructor.
 It defines how an instance of a class is setup.
 
@@ -65,3 +65,33 @@ It is called when creating an instance of a class
    :language: cpp
    :emphasize-lines: 2
    :lines: 47-48,60-62
+
+Methods
+^^^^^^^
+Functions that are provided by a class are called methods.
+The constructor, for example, is a special method of the class.
+A class can operate within a class and can thus e.g. access data otherwise inaccessible to a user.
+An example is setting a radius:
+
+.. literalinclude:: ../../../lessons/07_classes/classes.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 1
+   :lines: 20-23
+
+As any function, the method has a return type, in the above case ``void`` (nothing).
+It also takes arguments, in thsi case a single ``double`` value.
+The ``set_radius()`` method then uses an arrow ``->``, called member access through pointer to object operator, on the ``this`` object, a pointer to the current object instance, to access the member variable ``radiius`` and set it equal to ``r``.
+As this methods sets a value of the class instance, it is called a "setter-method".
+
+
+Another method of then simple particle class is the ``getName()`` method.
+It accesses the ``private`` name attribute and returns it.
+
+.. literalinclude:: ../../../lessons/07_classes/classes.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 1
+   :lines: 15-18
+
+Again, ``this->`` is used to access a value of the class instance, in this case the ``name`` attribute.
