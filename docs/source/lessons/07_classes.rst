@@ -95,3 +95,22 @@ It accesses the ``private`` name attribute and returns it.
    :lines: 15-18
 
 Again, ``this->`` is used to access a value of the class instance, in this case the ``name`` attribute.
+
+
+Inheritance
+-----------
+An essential aspect of object-oriented programming (OOP), which is code developement with classes, is inhertance.
+It allows to derive a new class based on a base class.
+The new class inheritas (takes over) attributes and methods from the base class, but can also add new attributes or methods or even overwrite them.
+This allows to have many specialized classes that derive fro the same conceptial base class without having to rewrite code.
+
+An example is that our previously defined ``BaseParticle`` class can be used as basis for a new ``ChargedParticle`` class.
+
+.. literalinclude:: ../../../lessons/07_classes/classes.cpp
+   :linenos:
+   :language: cpp
+   :emphasize-lines: 1
+   :lines: 29-45
+
+The addition ``: public BaseParticle`` after the class name tells the compiler that the new class inherited from that base class.
+The keyword ``public`` adds the base class in the ``public`` access meaning, all public data from ``BaseParticle`` stays public in ``ChargedParticle``.
