@@ -114,3 +114,13 @@ An example is that our previously defined ``BaseParticle`` class can be used as 
 
 The addition ``: public BaseParticle`` after the class name tells the compiler that the new class inherited from that base class.
 The keyword ``public`` adds the base class in the ``public`` access meaning, all public data from ``BaseParticle`` stays public in ``ChargedParticle``.
+
+The ``ChargedParticle`` adds a constructor, that takes the same arguments as the ``BaseParticle`` class but adds a charge.
+This ``charge`` attribute is also defined in the class as ``private`` and thus can only be accessed by the getter method ``getCharge()``.
+
+An example of using this new class is:
+
+.. literalinclude:: ../../../lessons/07_classes/classes.cpp
+   :linenos:
+   :language: cpp
+   :lines: 58-59
