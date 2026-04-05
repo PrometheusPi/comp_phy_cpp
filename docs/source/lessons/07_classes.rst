@@ -116,6 +116,19 @@ The addition ``: public BaseParticle`` after the class name tells the compiler t
 The keyword ``public`` adds the base class in the ``public`` access meaning, all public data from ``BaseParticle`` stays public in ``ChargedParticle``.
 
 The ``ChargedParticle`` adds a constructor, that takes the same arguments as the ``BaseParticle`` class but adds a charge.
+Here, we use a short form of the constructor where we directly set values before the body of the constructor in curly braces:
+
+.. code-block:: cpp
+
+    className : pubic baseClass
+      className(int argments_of_constructor, double value) // constructor
+        : baseClass(argments_of_constructor), attrubuteName(value)
+      {
+        ... // body of constructor
+      }
+    };
+
+
 This ``charge`` attribute is also defined in the class as ``private`` and thus can only be accessed by the getter method ``getCharge()``.
 
 An example of using this new class is:
