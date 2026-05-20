@@ -102,3 +102,20 @@ In C++, the string data type replaces that role and comes with extra features th
 Like numbers, characters and strings can be printed.
 
 
+Truth values (boolen)
+---------------------
+
+C++ also supports a datatype that stores a truth value (``true`` or ``false``).
+This is called a boolean value and is the return type of logical operations and comparisions
+Examples are:
+
+.. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
+   :linenos:
+   :language: cpp
+   :start-after: doc start: bool
+   :end-before: doc end: bool
+
+
+
+Commonly ``true`` is represented by ``1``, while ``false`` is represented by ``0``.
+Using ``std::boolalpha`` and ``std::noboolalpha`` turns this convetion off or on and prints instead true or false as text.
