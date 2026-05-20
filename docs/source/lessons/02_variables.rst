@@ -99,4 +99,6 @@ In C++, the string data type replaces that role and comes with extra features th
 
 
 
-Likenumbers, characters and strings can be printed.
+Like numbers, characters and strings can be printed.
+
+
