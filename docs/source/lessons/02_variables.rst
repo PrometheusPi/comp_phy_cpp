@@ -26,7 +26,8 @@ They can either be defined and initialized directly, or only declared and assign
    :linenos:
    :language: cpp
    :emphasize-lines: 2-3
-   :lines: 9-15
+   :start-after: doc start: integer
+   :end-before: doc end: integer
 
 
 On can also perform standard mathematical operations on integers or print them, as in the :doc:`Hello World example <01_hello-world>`
@@ -45,7 +46,9 @@ They can be defined in low 32-bit precision as ``float`` or higher precision 64-
 .. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
    :linenos:
    :language: cpp
-   :lines: 19-27
+   :start-after: doc start: double
+   :end-before: doc end: double
+
 
 
 As with integers, common mathematical operations and printing can be performed.
@@ -69,7 +72,9 @@ Sets are not demonstrated below.
 .. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
    :linenos:
    :language: cpp
-   :lines: 31-37
+   :start-after: doc start: vector
+   :end-before: doc end: vector
+
 
 
 One can use the bracket operator ``[...]`` to access a value in a vector or array.
@@ -89,7 +94,9 @@ In C++, the string data type replaces that role and comes with extra features th
 .. literalinclude:: ../../../lessons/02_variables_and_expressions/variables_and_expressions.cpp
    :linenos:
    :language: cpp
-   :lines: 41-45
+   :start-after: doc start: char
+   :end-before: doc end: char
+
 
 
 Likenumbers, characters and strings can be printed.

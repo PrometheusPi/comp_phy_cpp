@@ -6,6 +6,7 @@
 int main(){
   // this is a comment
 
+  // doc start: integer
   // datatype: integer
   int a = 42;
   int b;
@@ -13,21 +14,25 @@ int main(){
   int c = a + b;
   std::cout << "a + b = c" << std::endl;
   std::cout << a << " + " << b << " = " << c << std::endl;
+  // doc end: integer
 
   std::cout << std::endl;
 
+  // doc start: double
   /* datatype:
      float / double
-  */     
+  */
   float x = 3.1415;
   double y;
   y = 1.23e4;
   double z = x * y;
   std::cout << "x * y = z" << std::endl;
   std::cout << x << " * " << y << " = " << z << std::endl;
+  // doc end: double
 
   std::cout << std::endl;
 
+  // doc start: vector
   // datatype: vector / array
   std::vector<double> list1 = {1.2, 3.4, 5.6};
   std::array<double, 3> list2 = {1.2, 3.4, 5.6};
@@ -35,17 +40,21 @@ int main(){
   std::cout << list1[0] << "\t" << list2[2] << "\t" << list3 << std::endl;
   list1[1] = 4.2;
   std::cout << list1[0] << "\t" << list1[1] << "\t" << list1[2] << std::endl;
+  // doc end: vector
 
   std::cout << std::endl;
 
+  // doc start: char
   // datatype: char / string
   char letter = 'q';
   char char_array[5] = "abcd";
   std::string text = "uestion";
   std::cout << letter << text << std::endl;
+  // doc end: char
 
   std::cout << std::endl;
-  
+
+  // doc start: bool
   // datatype: bool
   bool right = true;
   bool wrong = false;
@@ -54,6 +63,7 @@ int main(){
   std::cout << "right = " << right << " and wrong = " << wrong << std::endl;
   std::cout << std::noboolalpha;
   std::cout << "right = " << right << " and wrong = " << wrong << std::endl;
-  
+  // doc end: bool
+
   return 0;
 };
