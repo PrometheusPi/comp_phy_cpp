@@ -2,6 +2,7 @@
 
 int main(){
 
+  // doc start: float
   std::cout << "floating point operations:" << std::endl;
   double a, b, c;
   a = 12.0;
@@ -22,7 +23,9 @@ int main(){
   // devision
   c = a / b;
   std::cout << a << " / " << b << " = " << c << std::endl;
+  // doc end: float
 
+  // doc start: int
   std::cout << std::endl << "integer operations:" << std::endl;
   int x, y, z;
   x = 12;
@@ -35,7 +38,9 @@ int main(){
   // modulo
   z = x % y;
   std::cout << x << " % " << y << " = " << z << std::endl;
+  // doc end: int
 
+  // doc start: bool
   std::cout << std::endl << "boolan operations:" << std::endl;
   std::cout << std::boolalpha;
   bool h, i, j;
@@ -48,7 +53,9 @@ int main(){
 
   j = h || i;
   std::cout << h << " or " << i << " = " << j << std::endl;
+  // doc end: bool
 
+  // doc start: unary
   std::cout << std::endl << "further operations" << std::endl;
 
   std::cout << "a = " << a << std::endl;
@@ -72,7 +79,9 @@ int main(){
 
   a /= 2;
   std::cout << "after a /= 2: a = " << a << std::endl;
+  // doc end: unary
 
+  // doc start: conditional
   std::cout << std::endl << "conditional operator:" << std::endl;
 
   c = (a >= 30) ? -2 : +4;
@@ -80,6 +89,7 @@ int main(){
   std::cout << "a = " << a << " b = " << b << std::endl;
   std::cout << "(a >= b) = " << (a >= b) << std::endl;
   std::cout << "c = " << c << std::endl;
+  // doc end: conditional
 
   return 0;
 };

@@ -18,7 +18,8 @@ Exemplary, we use ``double`` numbers ``a``  and ``b`` as the two variables we pe
    :linenos:
    :language: cpp
    :emphasize-lines: 2
-   :lines: 5-24
+   :start-after: doc start: float
+   :end-before: doc end: float
 
 
 Math binary operations on integer numbers
@@ -31,7 +32,8 @@ The remainder of this divison, also called the modulo in math, can be computed w
    :linenos:
    :language: cpp
    :emphasize-lines: 2
-   :lines: 26-37
+   :start-after: doc start: int
+   :end-before: doc end: int
 
 
 Boolean binary operations
@@ -47,7 +49,9 @@ Or is true if one or both values are true.
    :linenos:
    :language: cpp
    :emphasize-lines: 3
-   :lines: 39-50
+   :start-after: doc start: bool
+   :end-before: doc end: bool
+
 
 The output option ``std::cout << std::boolalpha;`` sets ``true`` and ``false`` in string output not to ``1`` and ``0`` but to readable strings.
 
@@ -67,7 +71,8 @@ They act like ``a = a + x`` and reprsent a shorthand notation via ``a += x`` (an
    :linenos:
    :language: cpp
    :emphasize-lines: 4,8,10,13,16,19,22
-   :lines: 52-74
+   :start-after: doc start: unary
+   :end-before: doc end: unary
 
 
 Conditional operators
@@ -98,4 +103,5 @@ An example is:
    :linenos:
    :language: cpp
    :emphasize-lines: 3
-   :lines: 76-82
+   :start-after: doc start: conditional
+   :end-before: doc end: conditional
