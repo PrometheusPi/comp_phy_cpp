@@ -31,3 +31,13 @@ and a file with the interface implementation called ``sub_file.cpp``.
 .. literalinclude:: ../../../lessons/09_multiple_files/sub_file.cpp
    :linenos:
    :language: cpp
+
+Compiling multiple files to one exectuable
+------------------------------------------
+There are multiple ways to compile and link the code in numerous files into one executable.
+The simplest is by providing all files on compilation directly:
+
+.. code-block:: bash
+		
+    g++ main.cpp sub_file.cpp
+
