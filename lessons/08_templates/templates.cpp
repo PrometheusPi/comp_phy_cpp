@@ -1,6 +1,11 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
+
+float sum(float x, float y){
+  return x + y;
+}
 
 template <typename T>
 T power(T a, T b){
@@ -19,6 +24,12 @@ T power(T a, int b){
 
 
 int main(){
+  double a = 1.00000000001;
+  double b = 1.00000000000;
+  std::cout << std::setprecision(15);
+  std::cout << a << " + " << b << " = " << a + b
+	    << " or " << sum(a,b) << std::endl;
+  
   double x = power(5.0, 2.0);
   std::cout << x << std::endl;
 
