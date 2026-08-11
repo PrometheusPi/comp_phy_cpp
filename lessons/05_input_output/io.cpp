@@ -8,7 +8,7 @@ int main(){
   // get numbers from user input
   std::vector<double> numbers;
 
-  std::cout << "Enter numbers (enter non-number to stop):" << std::endl;
+  std::cout << "Enter numbers (enter non-number, but not only return, to stop):" << std::endl;
   double num; // temporary storage for number
 
   while (std::cin >> num) {
@@ -19,6 +19,8 @@ int main(){
   std::cin.clear(); // clear error flags
   std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear buffer
 
+  std::cout << "finished reading input" << std::endl;
+  
   num = 0.123;
 
   for(double num : numbers){
