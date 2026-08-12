@@ -8,6 +8,12 @@ float sum(float x, float y){
 }
 
 template <typename T>
+T sum2(T x, T y){
+  return x + y;
+}
+
+
+template <typename T>
 T power(T a, T b){
   std::cout << "default" << std::endl;
   return std::pow(a, b);
@@ -27,8 +33,13 @@ int main(){
   double a = 1.00000000001;
   double b = 1.00000000000;
   std::cout << std::setprecision(15);
+  std::cout << "no template:" << std::endl;
   std::cout << a << " + " << b << " = " << a + b
-	    << " or " << sum(a,b) << std::endl;
+	    << " and sum() = " << sum(a,b) << std::endl;
+  std::cout << "with template:" << std::endl;
+  std::cout << a << " + " << b << " = " << a + b
+	    << " and sum2() = " << sum2(a,b) << std::endl;
+ 
   
   double x = power(5.0, 2.0);
   std::cout << x << std::endl;
