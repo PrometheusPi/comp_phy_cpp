@@ -23,8 +23,14 @@ template <typename T>
 T power(T a, int b){
   std::cout << "optimzed" << std::endl;
   T ret = 1;
-  for (int i = 0; i< b; i++)
-    ret *= a;
+  if (b > 0){
+    for (int i = 0; i< b; i++)
+      ret *= a;
+  }
+  else if (b < 0){
+    for (int i = 0; i< -b; i++)
+      ret /= a;
+  }
   return ret;
 }
 
@@ -54,5 +60,8 @@ int main(){
   //  int u = power(5, 2);
   //  std::cout << u << std::endl;
 
+  std::cout << power(2.0, -2.0) << std::endl;
+  std::cout << power(2.0, -2) << std::endl;
+  
   return 0;
 };
