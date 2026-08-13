@@ -18,3 +18,11 @@ This shortcomming is shown via the function ``sum()`` and the first print call i
 
 When calling ``sum()`` with ``double``, the numbers are both rounded to 1 and the sum is 2.
 If computing the sum via ``+``, the small difference survives.
+
+Template specialization
+-----------------------
+A second example of how to use templates to make your code more efficient is the power function ``pow(a, b)`` :math:`= a^b`.
+In the standarad library, it takes two ``float`` or ``double`` values.
+But if the expoenet :math:`b` is a (positive) integer, multiplying :math:`a` :math:`b` times is more efficient.
+Thus we define a general ``power()`` function that uses the ``pow()`` function.
+But of ``b`` is an integer, we specilize the function call and use a ``for`` loop instead.
