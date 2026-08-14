@@ -24,7 +24,7 @@ You can write your own function as follows:
 Outside the ``main`` function, you can define the function.
 It has to have a name and a return type.
 If no return is needed, state ``void`` instead of a return type.
-You ca define as many arguments and their types for the function as you want.
+You can define as many arguments and their types for the function as you want.
 A function has to be unique with respect to its name and argument types.
 In the ``{...};`` you can write the code to be executed.
 
@@ -33,8 +33,17 @@ An example of a self-defined function is:
 .. literalinclude:: ../../../lessons/04_functions/functions.cpp
    :linenos:
    :language: cpp
+   :start-after: doc start: firstFunction
+   :end-before: doc end: firstFunction
    :emphasize-lines: 1
-   :lines: 7-9,39-41,56-58,98-100
+
+The function call looks like:
+
+.. literalinclude:: ../../../lessons/04_functions/functions.cpp
+   :linenos:
+   :language: cpp		
+   :start-after: doc start: use firstFunction
+   :end-before: doc end: use firstFunction
 
 
 Use existing functions from libraries

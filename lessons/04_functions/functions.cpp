@@ -4,10 +4,11 @@
 #include <numbers>
 
 
+// doc start: firstFunction
 double my_function(double a){
   return a * a * a;
 };
-
+// doc end: firstFunction
 
 void myFunction(std::string word, uint times){
   for(uint i=0; i< times; i++){
@@ -37,8 +38,10 @@ int fibanocci(int x){
 
 
 
+// doc start: main
 int main(){
   double x, y;
+// doc end: main
 
   x = 1.5 * std::numbers::pi;
   y = std::sin(x);
@@ -53,9 +56,11 @@ int main(){
   y = std::sqrt(std::numbers::e);
   std::cout << "sqrt(e) = " << y << std::endl;
 
+// doc start: use firstFunction
   x = 12.0;
   // simple own math function
   std::cout << x << "^3 = " << my_function(x) << " = " << std::pow(x, 3) << std::endl;
+// doc end: use firstFunction
 
   // simple void function
   myFunction("abc", 5);
@@ -95,6 +100,8 @@ int main(){
   };
   int res = capture_lambda(8);
   std::cout << global_counter << " -- " << res << std::endl;
-  
+
+// doc start: return
   return 0;
 };
+// doc end: return
