@@ -19,6 +19,7 @@ Welcome to computational physics in c++'s documentation!
    lessons/07_classes
    lessons/08_templates
    lessons/09_manyFiles
+   lessons/10_plotting
 
 Indices and tables
 ==================
