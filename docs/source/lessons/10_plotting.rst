@@ -4,8 +4,8 @@ Plotting data
 
 Introduction
 ------------
-In order to display results of our simulations, we will output the results to text and then plot them via a software called ```gnuplot``.
-This is not an ideal solution, as we need to also learn some basic ```gnuplot`` commands.
+In order to display results of our simulations, we will output the results to text and then plot them via a software called ``gnuplot``.
+This is not an ideal solution, as we need to also learn some basic ``gnuplot`` commands.
 But I believe this is a very simple solution that will work on any system.
 For details on ``gnuplot`` see: https://gnuplot.sourceforge.net/
 
